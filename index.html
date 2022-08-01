@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tic-Tac-Toe</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="tictactoe.png">
+</head>
+
+<body>
+  <div class="title">Tic-Tac-Toe</div>
+  <div class="container">
+    <div class="numplayers">
+      <select class="select">
+        <option value="one">1 Player</option>
+        <option value="two">2 Players</option>
+      </select>
+    </div>
+    <div class="board">
+      <div class="winner">Winner: <div class="color"></div></div>
+      <div class="start" onclick="start()">START</div>
+      <div class="box1 box" onclick="nextTurn(this.className)"></div>
+      <div class="box2 box" onclick="nextTurn(this.className)"></div>
+      <div class="box3 box" onclick="nextTurn(this.className)"></div>
+      <div class="box4 box" onclick="nextTurn(this.className)"></div>
+      <div class="box5 box" onclick="nextTurn(this.className)"></div>
+      <div class="box6 box" onclick="nextTurn(this.className)"></div>
+      <div class="box7 box" onclick="nextTurn(this.className)"></div>
+      <div class="box8 box" onclick="nextTurn(this.className)"></div>
+      <div class="box9 box" onclick="nextTurn(this.className)"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
