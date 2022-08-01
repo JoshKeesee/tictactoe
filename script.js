@@ -701,6 +701,7 @@ function win() {
     document.querySelector(".winner").style.opacity = "1";
     document.querySelector(".start").style.opacity = "1";
     document.querySelector(".start").onclick = function() { start() };
+    document.querySelector(".start").style.cursor = "pointer";
     document.querySelector(".numplayers").style.opacity = "1";
     document.querySelector(".numplayers").style.zIndex = "3";
     document.querySelector(".select").disabled = false; 
