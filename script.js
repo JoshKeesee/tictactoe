@@ -176,7 +176,7 @@ function cpuPlay() {
                 return;
             }
         } else if (plays[2] === "blue") {
-            if (plays[5] === "") { 
+            if (plays[0] === "") { 
                 nextTurn("box1");
                 return;
             }
@@ -270,7 +270,7 @@ function cpuPlay() {
                 return;
             }
         } else if (plays[5] === "blue") {
-            if (plays[5] === "") { 
+            if (plays[3] === "") { 
                 nextTurn("box4");
                 return;
             }
@@ -387,7 +387,7 @@ function cpuPlay() {
                 return;
             }
         } else if (plays[6] === "blue") {
-            if (plays[7] === "") { 
+            if (plays[5] === "") { 
                 nextTurn("box6");
                 return;
             }
@@ -537,7 +537,7 @@ function cpuPlay() {
                 return;
             }
         } else if (plays[5] === "red") {
-            if (plays[5] === "") { 
+            if (plays[3] === "") { 
                 nextTurn("box4");
                 return;
             }
@@ -654,7 +654,7 @@ function cpuPlay() {
                 return;
             }
         } else if (plays[6] === "red") {
-            if (plays[7] === "") { 
+            if (plays[5] === "") { 
                 nextTurn("box6");
                 return;
             }
