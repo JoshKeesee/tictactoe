@@ -443,7 +443,7 @@ function cpuPlay() {
                 return;
             }
         } else if (plays[2] === "red") {
-            if (plays[5] === "") { 
+            if (plays[0] === "") { 
                 nextTurn("box1");
                 return;
             }
