@@ -674,11 +674,27 @@ function cpuPlay() {
     nextTurn("box" + JSON.stringify(random));
 }
 function pickRandom() {
-    random = Math.floor(Math.random() * 9) + 1;
-    if (plays[random - 1] === "") {
-        return;
+    if (plays[4] === "") {
+      random = 5;
+    } else if (plays[0] === "") {
+      random = 1;
+      return;
+    } else if (plays[2] === "") {
+      random = 3;
+      return;
+    } else if (plays[6] === "") {
+      random = 7;
+      return;
+    } else if (plays[8] === "") {
+      random = 9;
+      return;
     } else {
-        pickRandom();
+      random = Math.floor(Math.random() * 9) + 1;
+      if (plays[random - 1] === "") {
+          return;
+      } else {
+          pickRandom();
+      }
     }
 }
 function win() {
