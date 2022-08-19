@@ -676,9 +676,21 @@ function cpuPlay() {
 function pickRandom() {
     if (plays[4] === "") {
       random = 5;
-    } else if (plays[0] === "") {
-      random = 1;
-      return;
+    } else if (plays[0] === "" && plays[2] === "" && plays[6] === "" && plays[8] === "") {
+      random = Math.floor(Math.random() * 4) + 1;
+      if (random === 1) {
+        random = 1;
+        return;
+      } else if (random === 2) {
+        random = 3;
+        return;
+      } else if (random === 3) {
+        random = 7;
+        return;
+      } else if (random === 4) {
+        random = 9;
+        return;
+      }
     } else if (plays[2] === "") {
       random = 3;
       return;
