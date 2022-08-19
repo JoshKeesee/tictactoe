@@ -691,14 +691,14 @@ function pickRandom() {
         random = 9;
         return;
       }
-    } else if (plays[2] === "") {
-      random = 3;
-      return;
     } else if (plays[6] === "") {
       random = 7;
       return;
     } else if (plays[8] === "") {
       random = 9;
+      return;
+    } else if (plays[2] === "") {
+      random = 3;
       return;
     } else {
       random = Math.floor(Math.random() * 9) + 1;
